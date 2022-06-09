@@ -1,0 +1,72 @@
+#DequeNodeTest
+1. GetItem deberá devolver el item del nodo
+2. GetNext deberá devolver el nodo siguiente
+3. GetPrevious deberá devolver el nodo anterior
+
+4. SetItem deberá modificar el item del nodo
+5. SetNext deberá modificar el nodo siguiente
+6. SetPrevious deberá modificar el nodo anterior
+
+7. isFirst deberá devolver True si el previo es null
+8. isFirst deberá devolver False si el previo no es null
+9. isLast deberá devolver True si el siguiente es null
+10. isLast deberá devolver False si el siguiente no es null
+
+11. isNotATerminalNode deberá devolver True si el previo y el siguiente no son null
+12. isNotATerminalNode deberá devolver False si el siguiente es null
+13. isNotATerminalNode deberá devolver False si el anterior es null
+14. isNotATerminalNode deberá devolver False si el anterior y el siguiente son null
+
+#DoubleLinkedListQueue
+
+Append y AppendLeft
+1. Añadir un nodo nulo deberá lanzar una excepción
+2. Añadir un nodo a una lista vacía deberá añadirlo como primero y último
+3. Añadir un nodo a una lista con un único nodo
+4. Añadir un nodo en una lista con varios nodos
+5. Añadir un nodo que ya existe no deberá hacer nada
+6. Añadir un nodo con referencias next y previous a una lista vacía deberá ignorar las dos
+7. Añadir un nodo con referencias next y previous a una lista no vacía deberá ignora las dos
+
+DeleteFirst y DeleteLast
+8. Eliminar en una lista vacía deberá lanzar una excepción
+9. Eliminar en una lista con un solo nodo deberá dejar a null first y last
+10. Eliminar en una lista con varios nodos
+
+Size
+11. Lista vacía deberá tener tamaño cero
+12. Lista con un nodo deberá tener tamaño uno
+13. Lista con dos nodos deberá tener tamaño dos
+14. Lista con 5 nodos deberá tener tamaño 5
+15. Tamaño deberá incremenetar en uno cuando hacemos append
+16. Tamaño deberá incrementar en uno cuando hacemos appendLeft
+17. Tamaño deberá decrementar en uno cuando hacemos delete
+
+GetAt
+18. Posición negativa deberá lanzar una excepción
+19. Posición mayor que el tamaño deberá lanzar una excepción
+20. Posición 0 deberá devolver el primer nodo
+21. Posición size()-1 deberá devolver el último nodo
+22. Posición entre 0 y size() deberá devolver el nodo de esa posición.
+
+Find
+23. Cuando Item no está en la lista deberá devolver null
+24. Cuando Item está en el primer nodo deberá devolver el primer nodo
+25. Cuando Item está en el último nodo deberá devolver el último nodo
+26. Cuando solo un nodo tiene el Item en la lista deberá devolver ese nodo
+27. Cuando varios nodos tienen el Item en la lista, deberá devolver el primero encontrado
+
+Delete
+28. Eliminar un nodo que no se encuentra no deberá alterar la lista
+29. Eliminar el primer nodo deberá eliminar el primer nodo
+30. Eliminar el último nodo deberá eliminar el último nodo
+31. Eliminar un nodo deberá quitar ese nodo de la lista
+
+Sort
+32. Ordenar una lista vacía no deberá modificar la lista
+33. Ordenar una lista con un solo elemento no deberá modificar la lista
+34. Ordenar una lista con dos elementos deberá ordenarla
+35 y 36. Ordenar una lista con mas de un elemento, deberá ordenar la lista así como manda el comparador indicado
+
+
+
